@@ -5,8 +5,8 @@
             "Wolfgang Fahl"
         ]
     },
-    "s5SlideShow": "S5SlideShow",
-    "s5SlideShow-desc": "S5SlideShow est une extension MediaWiki permettant la création simple, rapide et pratique de diaporamas utilisant S5 dans le contexte des pages MediaWiki et Wiki.",
+    "s5slide-name": "S5SlideShow",
+    "s5slide-desc": "S5SlideShow est une extension MediaWiki permettant la création simple, rapide et pratique de diaporamas utilisant S5 dans le contexte des pages MediaWiki et Wiki.",
     "special-s5SlideShow-title": "S5SlideShow configuration",
     "special-s5SlideShow-intro": "",
     "s5slide-header-title" : "Titre",
@@ -14,5 +14,4 @@
     "s5slide-header-footer" : "Pied de page",
     "s5slide-header-subfooter" : "Sous pied de page",
     "s5slide-header-author" : "Auteur"
-}
 }

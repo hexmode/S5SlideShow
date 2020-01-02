@@ -5,8 +5,8 @@
             "Wolfgang Fahl"
         ]
     },
-    "s5SlideShow": "S5SlideShow",
-    "s5SlideShow-desc": "S5SlideShow - это расширение MediaWiki, позволяющее просто, быстро и удобно создавать слайд-шоу с использованием S5 в контексте страниц MediaWiki и Wiki.",
+    "s5slide-name": "S5SlideShow",
+    "s5slide-desc": "S5SlideShow - это расширение MediaWiki, позволяющее просто, быстро и удобно создавать слайд-шоу с использованием S5 в контексте страниц MediaWiki и Wiki.",
     "special-s5SlideShow-title": "S5SlideShow configuration",
     "special-s5SlideShow-intro": "",
     "s5slide-header-title" : "Заголовок",

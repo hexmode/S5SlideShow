@@ -3,6 +3,7 @@
 /**
  * Extension to create slide shows from wiki pages using improved S5 (http://meyerweb.com/eric/tools/s5/)
  * Copyright (c) 2010+ Vitaliy Filippov <vitalif@mail.ru>
+ * Copyright (c) 2017-2020 Wolfgang Fahl
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,6 +23,7 @@
 
 /**
  * @author Vitaliy Filippov <vitalif@mail.ru>
+ * @author Wolfgang Fahl 
  * @package MediaWiki
  * @subpackage Extensions
  */
