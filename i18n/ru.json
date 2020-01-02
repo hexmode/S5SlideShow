@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Vitaliy Filippov",
+            "Wolfgang Fahl"
+        ]
+    },
+    "s5SlideShow": "S5SlideShow",
+    "s5SlideShow-desc": "S5SlideShow - это расширение MediaWiki, позволяющее просто, быстро и удобно создавать слайд-шоу с использованием S5 в контексте страниц MediaWiki и Wiki.",
+    "special-s5SlideShow-title": "S5SlideShow configuration",
+    "special-s5SlideShow-intro": "",
+    "s5slide-header-title" : "Заголовок",
+    "s5slide-header-subtitle" : "Подзаголовок",
+    "s5slide-header-footer" : "Нижний колонтитул",
+    "s5slide-header-subfooter" : "Дополнительный нижний колонтитул",
+    "s5slide-header-author" : "Автор"
+}

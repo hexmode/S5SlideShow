@@ -68,19 +68,20 @@ $egS5DefaultStyle = 'default';
 $egS5Scaled = false;
 
 //--- End configuration ---//
+$wgExtensionFunctions[] = 'S5SlideShowHooks::Setup';
 
-/* Extension setup */
+/* legacy Extension setup 
 
 $wgExtensionMessagesFiles['S5SlideShow'] = $dir.'/S5SlideShow.i18n.php';
 $wgHooks['UnknownAction'][] = 'S5SlideShowHooks::UnknownAction';
 $wgAutoloadClasses['S5SlideShow'] = $dir.'/S5SlideShow.class.php';
 $wgAutoloadClasses['S5SkinArticle'] = $dir.'/S5SlideShow.class.php';
-$wgExtensionFunctions[] = 'S5SlideShowHooks::Setup';
 $wgHooks['ParserFirstCallInit'][] = 'S5SlideShowHooks::ParserFirstCallInit';
 $wgHooks['ArticleFromTitle'][] = 'S5SlideShowHooks::ArticleFromTitle';
 $wgHooks['AlternateEdit'][] = 'S5SlideShowHooks::AlternateEdit';
 $wgHooks['MagicWordwgVariableIDs'][] = 'S5SlideShowHooks::MagicWordwgVariableIDs';
 $wgHooks['ParserGetVariableValueSwitch'][] = 'S5SlideShowHooks::ParserGetVariableValueSwitch';
+*/
 
 class S5SlideShowHooks
 {

@@ -1,0 +1,43 @@
+{
+    "name": "S5SlideShow",
+    "author": "Vitaliy Filippov",
+    "url": "https://www.mediawiki.org/wiki/Extension:S5SlideShow",
+    "license-name": "GPL-2.0+",
+    "version": "0.1.33",
+    "namemsg": "s5SlideShow",
+    "descriptionmsg": "s5SlideShow-desc",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "S5SlideShow": [ "i18n" ]
+    },
+    "AutoloadClasses": {
+        "SpecialS5SlideShow": "specials/SpecialS5SlideShow.php",
+        "S5SlideShow": "S5SlideShow.class.php",
+        "S5SkinArticle": "S5SlideShow.class.php",
+        "S5SlideShowHooks": "S5SlideShow.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "S5SlideShowHooks::ParserFirstCallInit"
+        ],
+        "ArticleFromTitle": [
+            "S5SlideShowHooks::ArticleFromTitle"
+        ],
+        "AlternateEdit": [
+            "S5SlideShowHooks::AlternateEdit"
+        ],
+        "MagicWordwgVariableIDs": [
+            "S5SlideShowHooks::MagicWordwgVariableIDs"
+        ],
+        "ParserGetVariableValueSwitch": [
+            "S5SlideShowHooks::ParserGetVariablValueSwitch"
+        ]
+    },
+    "SpecialPages": {
+        "S5SlideShow": "SpecialS5SlideShow"
+    },
+    "ExtensionMessagesFiles": {
+        "S5SlideShowAlias": "S5SlideShow.alias.php"
+    },
+    "type": "other"
+}

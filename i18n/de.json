@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Vitaliy Filippov",
+            "Wolfgang Fahl"
+        ]
+    },
+    "s5SlideShow": "S5SlideShow",
+    "s5SlideShow-desc": "S5SlideShow ist eine MediaWiki-Erweiterung, die das einfache, schnelle und bequeme Erstellen von Diashows mit S5 im Kontext von MediaWiki- und Wiki-Seiten ermöglicht.",
+    "special-s5SlideShow-title": "S5SlideShow configuration",
+    "special-s5SlideShow-intro": ""
+    "s5slide-header-title" : "Titel",
+    "s5slide-header-subtitle" : "Untertitel",
+    "s5slide-header-footer" : "Fußzeile",
+    "s5slide-header-subfooter" : "Unterfußzeile",
+    "s5slide-header-author" : "Autor"
+}
+}
