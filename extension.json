@@ -14,38 +14,55 @@
         "Wolfgang Fahl"
     ],
     "AutoloadClasses": {
-        "SpecialS5SlideShow": "specials/SpecialS5SlideShow.php",
-        "S5SlideShow": "S5SlideShow.class.php",
-        "S5SkinArticle": "S5SlideShow.class.php",
-        "S5SlideShowHooks": "S5SlideShow.php"
+        "MediaWiki\\Extensions\\S5SlideShow\\Action": "src/Action.php",
+        "MediaWiki\\Extensions\\S5SlideShow\\Hooks": "src/Hooks.php",
+        "MediaWiki\\Extensions\\S5SlideShow\\Render": "src/Render.php",
+        "MediaWiki\\Extensions\\S5SlideShow\\Skin": "src/Skin.php",
+        "MediaWiki\\Extensions\\S5SlideShow\\Special": "src/Special.php"
     },
+	"Actions": {
+		"slide": "MediaWiki\\Extensions\\S5SlideShow\\Action"
+	},
     "Hooks": {
+		"ImageBeforeProduceHTML": [
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ImageBeforeProduceHTML"
+		],
         "ParserFirstCallInit": [
-            "S5SlideShowHooks::ParserFirstCallInit"
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ParserFirstCallInit"
         ],
         "ArticleFromTitle": [
-            "S5SlideShowHooks::ArticleFromTitle"
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ArticleFromTitle"
         ],
         "AlternateEdit": [
-            "S5SlideShowHooks::AlternateEdit"
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::AlternateEdit"
         ],
         "MagicWordwgVariableIDs": [
-            "S5SlideShowHooks::MagicWordwgVariableIDs"
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::MagicWordwgVariableIDs"
         ],
         "ParserGetVariableValueSwitch": [
-            "S5SlideShowHooks::ParserGetVariablValueSwitch"
+            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ParserGetVariablValueSwitch"
         ]
     },
     "SpecialPages": {
-        "S5SlideShow": "SpecialS5SlideShow"
+        "S5SlideShow": "MediaWiki\\Extensions\\S5SlideShow\\Special"
     },
     "ExtensionMessagesFiles": {
-        "S5SlideShowAlias": "S5SlideShow.alias.php"
+        "S5SlideShowI18n": "src/I18n.php"
     },
     "MessagesDirs": {
         "S5SlideShow": [
             "i18n"
         ]
     },
+	"config": {
+		"_prefix": "egS5",
+		"Scaled": false,
+		"DefaultStyle": "default",
+		"BrowserScaleHack": true,
+		"SlideTemplateFile": "slide.htm",
+		"SlideCenterMark": "(center)",
+		"SlideHeadingMark": false,
+		"SlideIncMark": "(step)"
+	},
     "manifest_version": 1
 }
