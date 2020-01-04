@@ -14,30 +14,30 @@
         "Wolfgang Fahl"
     ],
 	"Actions": {
-		"slide": "MediaWiki\\Extensions\\S5SlideShow\\Action"
+		"slide": "MediaWiki\\Extension\\S5SlideShow\\Action"
 	},
     "Hooks": {
 		"ImageBeforeProduceHTML": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ImageBeforeProduceHTML"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::ImageBeforeProduceHTML"
 		],
         "ParserFirstCallInit": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ParserFirstCallInit"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::ParserFirstCallInit"
         ],
         "ArticleFromTitle": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ArticleFromTitle"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::ArticleFromTitle"
         ],
         "AlternateEdit": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::AlternateEdit"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::AlternateEdit"
         ],
         "MagicWordwgVariableIDs": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::MagicWordwgVariableIDs"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::MagicWordwgVariableIDs"
         ],
         "ParserGetVariableValueSwitch": [
-            "MediaWiki\\Extensions\\S5SlideShow\\Hooks::ParserGetVariablValueSwitch"
+            "MediaWiki\\Extension\\S5SlideShow\\Hooks::ParserGetVariablValueSwitch"
         ]
     },
     "SpecialPages": {
-        "S5SlideShow": "MediaWiki\\Extensions\\S5SlideShow\\Special"
+        "S5SlideShow": "MediaWiki\\Extension\\S5SlideShow\\Special"
     },
     "ExtensionMessagesFiles": {
         "S5SlideShowI18n": "src/I18n.php"

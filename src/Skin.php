@@ -18,13 +18,16 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  * http://www.gnu.org/copyleft/gpl.html
  */
-namespace MediaWiki\Extensions\S5SlideShow;
+namespace MediaWiki\Extension\S5SlideShow;
 
 /**
  * @author Vitaliy Filippov <vitalif@mail.ru>
  * @package MediaWiki
  * @subpackage Extensions
  */
+
+use SkinApi;
+use SkinTemplate;
 
 class Skin extends SkinApi {
 	public function setupSkinUserCss( OutputPage $out ) {
