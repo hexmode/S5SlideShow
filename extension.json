@@ -13,13 +13,6 @@
         "Vitaliy Filippov",
         "Wolfgang Fahl"
     ],
-    "AutoloadClasses": {
-        "MediaWiki\\Extensions\\S5SlideShow\\Action": "src/Action.php",
-        "MediaWiki\\Extensions\\S5SlideShow\\Hooks": "src/Hooks.php",
-        "MediaWiki\\Extensions\\S5SlideShow\\Render": "src/Render.php",
-        "MediaWiki\\Extensions\\S5SlideShow\\Skin": "src/Skin.php",
-        "MediaWiki\\Extensions\\S5SlideShow\\Special": "src/Special.php"
-    },
 	"Actions": {
 		"slide": "MediaWiki\\Extensions\\S5SlideShow\\Action"
 	},

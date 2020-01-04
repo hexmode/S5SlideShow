@@ -1,7 +1,44 @@
 {
+	"name": "mediawiki/s5-slide-show",
+	"extra": {
+		"installer-name": "S5SlideShow"
+	},
+	"homepage": "https:\/\/www.mediawiki.org\/wiki\/Extension:S5SlideShow",
+	"license": "GPL-2.0+",
+	"type": "mediawiki-extension",
+	"keywords": [
+		"extension",
+		"wiki",
+		"mediawiki",
+		"presentation"
+	],
+	"authors": [
+		{
+			"name": "Vitaliy Filippov",
+			"url": "https://www.mediawiki.org/wiki/User:VitaliyFilippov",
+			"role": "Developer"
+		},
+		{
+			"name": "Mark A. Hershberger",
+			"url": "http://hexmode.com/",
+			"email": "mah@nichework.com",
+			"role": "Contributor"
+		},
+		{
+			"name": "Wolfgang Fahl",
+			"url": "http://bitplan.com/",
+			"role": "Contributor"
+		}
+	],
+	"autoload" : {
+		"psr-4": {
+			"MediaWiki\\Extension\\S5SlideShow\\" : "src"
+		}
+	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "~1.0",
-		"mediawiki/mediawiki-codesniffer": "~28.0"
+		"mediawiki/mediawiki-codesniffer": "~28.0",
+		"wikimedia/at-ease": "*"
 	},
 	"scripts": {
 		"test": [
