@@ -46,32 +46,32 @@ class Hooks {
 	static function ParserFirstCallInit( $parser ) {
 		if ( !isset( $parser->extS5Hooks ) ) {
 			$parser->setHook(
-				'slideshow', 'MediaWiki\Extensions\S5SlideShow\Render::slideshow_view'
+				'slideshow', [ MediaWiki\Extension\S5SlideShow\Render, 'slideshow_view' ]
 			);
 			$parser->setHook(
-				'slide', 'MediaWiki\Extensions\S5SlideShow\Render::slideshow_legacy'
+				'slide', 'MediaWiki\Extension\S5SlideShow\Render::slideshow_legacy'
 			);
 			$parser->setHook(
-				'slides', 'MediaWiki\Extensions\S5SlideShow\Render::slides_view'
+				'slides', 'MediaWiki\Extension\S5SlideShow\Render::slides_view'
 			);
 			$parser->setHook(
-				'slidecss', 'MediaWiki\Extensions\S5SlideShow\Render::slidecss_view'
+				'slidecss', 'MediaWiki\Extension\S5SlideShow\Render::slidecss_view'
 			);
 		} elseif ( $parser->extS5Hooks === 'parse' ) {
 			$parser->setHook( 'slideshow', [ $parser->extS5, 'slideshow_parse' ] );
 			$parser->setHook( 'slide', [ $parser->extS5, 'slideshow_parse' ] );
 			$parser->setHook(
-				'slides', 'MediaWiki\Extensions\S5SlideShow\Render::empty_tag_hook'
+				'slides', 'MediaWiki\Extension\S5SlideShow\Render::empty_tag_hook'
 			);
 			$parser->setHook(
-				'slidecss', 'MediaWiki\Extensions\S5SlideShow\Render::empty_tag_hook'
+				'slidecss', 'MediaWiki\Extension\S5SlideShow\Render::empty_tag_hook'
 			);
 		} elseif ( $parser->extS5Hooks === 'parse2' ) {
 			$parser->setHook(
-				'slideshow', 'MediaWiki\Extensions\S5SlideShow\Render::empty_tag_hook'
+				'slideshow', 'MediaWiki\Extension\S5SlideShow\Render::empty_tag_hook'
 			);
 			$parser->setHook(
-				'slide', 'MediaWiki\Extensions\S5SlideShow\Render::empty_tag_hook'
+				'slide', 'MediaWiki\Extension\S5SlideShow\Render::empty_tag_hook'
 			);
 			$parser->setHook( 'slides', [ $parser->extS5, 'slides_parse' ] );
 			$parser->setHook( 'slidecss', [ $parser->extS5, 'slidecss_parse' ] );

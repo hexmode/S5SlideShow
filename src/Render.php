@@ -72,7 +72,7 @@ class Render {
 	/**
 	 * Parse attribute hash and save them into $this
 	 */
-	function setAttributes( $attr ) {
+	public function setAttributes( $attr ) {
 		global $wgContLang, $wgUser, $egS5SlideHeadingMark, $egS5SlideIncMark,
 			$egS5SlideCenterMark, $egS5DefaultStyle, $egS5Scaled;
 		// Get attributes from tag content
@@ -138,7 +138,7 @@ class Render {
 	 * Checks heading text for headingmark, incmark, centermark
 	 * Returns NULL or array(title, incremental, centered)
 	 */
-	function check_slide_heading( $node ) {
+	public function check_slide_heading( $node ) {
 		$ot = trim( $node->nodeValue, "= \n\r\t\v" );
 		$st = $this->attr['headingmark'] ? preg_replace( $this->heading_re, '', $ot ) : $ot;
 		if ( !$this->attr['headingmark'] || $st != $ot ) {
@@ -526,7 +526,7 @@ class Render {
 	 * <slideshow> - article view mode
 	 * displays a link to the slideshow and skin preview
 	 */
-	static function slideshow_view(
+	public static function slideshow_view(
 		$content, $attr, $parser, $frame = null, $addmsg = ''
 	) {
 		global $wgScriptPath, $wgParser, $wgContLang;
